@@ -13,7 +13,7 @@ axios.get(`http://localhost/news-website/backend/read.php`)
         <p>${element.description}</p>
         <div class="flex gap">
             <button class="btn edit-btn" id="edit_${element.id}">Edit</button>
-            <button class="btn edit-btn" id="delete_${element.id}">Delete</button>
+            <button class="btn delete-btn" id="delete_${element.id}">Delete</button>
         </div>
     </div>`
     });
