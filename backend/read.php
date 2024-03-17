@@ -1,8 +1,14 @@
 <?php
 include('connection.php');
 
-
-$load_news = $mysqli->prepare('select * from news');
+if(!empty($_GET["news_id"])){
+    $id = intval($_GET["news_id"]);
+    $load_news = $mysqli->prepare('select * from news where id =?');
+    $load_news->bind_param('i', $id);
+}
+else{
+    $load_news = $mysqli->prepare('select * from news');
+}
 $load_news->execute();
 $load_news->store_result();
 $num_rows = $load_news->num_rows();
