@@ -22,81 +22,12 @@
         <div class="add-card">
             <div>
                 <h1>The outlet where news headlines are brought to you, by you.</h1>
-                <button class="btn">Add News</button>
+                <button class="btn" id="add-btn">Add News</button>
             </div>
         </div>
 
-        <div class="cards-container flex gap">
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
-
-            <div class="flex column center card secondary-bg">
-                <img src="./assets/channels4_profile.jpg" alt="news" />
-                <h3>News News</h3>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="flex gap">
-                    <button class="btn">Edit</button>
-                    <button class="btn">Delete</button>
-                </div>
-            </div>
+        <div class="cards-container flex gap" id="container">
+        </div>
 
             <form class="pop-up gap flex column align-center hidden" id="popup">
                 <label for="news-title">Title</label>
@@ -108,21 +39,11 @@
                     <button class="btn">Cancel</button>
                 </div>
             </form>
-
-
-
-
-        </div>
     </section>
-
-
-
-
     
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../frontend/scripts/read.js"></script>
 
-
-
-    
 </body>
 </html>
