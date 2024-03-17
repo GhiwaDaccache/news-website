@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Namdhinggo", serif;
+    border: none;
 }
 
 header{
@@ -46,7 +47,7 @@ header{
 }
 
 .btn{
-    background-color: #cecdd4;
+    background-color: #9d9d9d;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -55,7 +56,40 @@ header{
     cursor: pointer;
     height: 35px;
     width: 100px;
-    border-color: rgb(51, 51, 51);
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.pop-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: fit-content;
+    border-radius: 3px;
+    box-shadow: 0px 3px 4px 0px #888888;
+    padding-bottom: 5px;
+
+}
+
+.pop-up input{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #716e8a;
+    width: 70%;
+}
+
+.title-input{
+    height: 30px;
+}
+
+.news-input{
+    height: 150px;
 }
 
 @media (max-width: 720px) {
